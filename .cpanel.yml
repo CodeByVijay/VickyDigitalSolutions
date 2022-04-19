@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/vickyamu/public_html/vds
+    - /bin/cp * $DEPLOYPATH
