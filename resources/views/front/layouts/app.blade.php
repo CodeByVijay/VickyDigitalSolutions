@@ -75,8 +75,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link active">About</a>
+                    <a href="{{route('front.home')}}" class="nav-item nav-link">Home</a>
+                    <a href="{{route('front.about')}}" class="nav-item nav-link active">About</a>
                     <a href="service.html" class="nav-item nav-link">Services</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
