@@ -21,14 +21,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="{{asset('front/assets/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
-    <link href="{{asset('front/assets/lib/animate/animate.min.css')}}" rel="stylesheet">
+    <link href="{{asset('public/front/assets/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+    <link href="{{asset('public/front/assets/lib/animate/animate.min.css')}}" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{asset('front/assets/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('public/front/assets/css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="{{asset('front/assets/css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('public/front/assets/css/style.css')}}" rel="stylesheet">
     @stack('style')
 </head>
 
@@ -103,7 +103,7 @@
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="{{asset('front/assets/img/carousel-1.jpg')}}" alt="Image">
+                    <img class="w-100" src="{{asset('public/front/assets/img/carousel-1.jpg')}}" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase mb-3 animated slideInDown">Creative & Innovative</h5>
@@ -114,7 +114,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="{{asset('front/assets/img/carousel-2.jpg')}}" alt="Image">
+                    <img class="w-100" src="{{asset('public/front/assets/img/carousel-2.jpg')}}" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase mb-3 animated slideInDown">Creative & Innovative</h5>
@@ -165,14 +165,14 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{{asset('front/assets/lib/wow/wow.min.js')}}"></script>
-    <script src="{{asset('front/assets/lib/easing/easing.min.js')}}"></script>
-    <script src="{{asset('front/assets/lib/waypoints/waypoints.min.js')}}"></script>
-    <script src="{{asset('front/assets/lib/counterup/counterup.min.js')}}"></script>
-    <script src="{{asset('front/assets/lib/owlcarousel/owl.carousel.min.js')}}"></script>
+    <script src="{{asset('public/front/assets/lib/wow/wow.min.js')}}"></script>
+    <script src="{{asset('public/front/assets/lib/easing/easing.min.js')}}"></script>
+    <script src="{{asset('public/front/assets/lib/waypoints/waypoints.min.js')}}"></script>
+    <script src="{{asset('public/front/assets/lib/counterup/counterup.min.js')}}"></script>
+    <script src="{{asset('public/front/assets/lib/owlcarousel/owl.carousel.min.js')}}"></script>
 
     <!-- Template Javascript -->
-    <script src="{{asset('front/assets/js/main.js')}}"></script>
+    <script src="{{asset('public/front/assets/js/main.js')}}"></script>
     @stack('script')
 </body>
 

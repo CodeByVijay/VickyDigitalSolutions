@@ -21,14 +21,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="{{asset('front/assets/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
-    <link href="{{asset('front/assets/lib/animate/animate.min.css')}}" rel="stylesheet">
+    <link href="{{asset('public/front/assets/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+    <link href="{{asset('public/front/assets/lib/animate/animate.min.css')}}" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{asset('front/assets/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('public/front/assets/css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="{{asset('front/assets/css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('public/front/assets/css/style.css')}}" rel="stylesheet">
     @stack('style')
 </head>
 
@@ -140,14 +140,14 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{{asset('front/assets/lib/wow/wow.min.js')}}"></script>
-    <script src="{{asset('front/assets/lib/easing/easing.min.js')}}"></script>
-    <script src="{{asset('front/assets/lib/waypoints/waypoints.min.js')}}"></script>
-    <script src="{{asset('front/assets/lib/counterup/counterup.min.js')}}"></script>
-    <script src="{{asset('front/assets/lib/owlcarousel/owl.carousel.min.js')}}"></script>
+    <script src="{{asset('public/front/assets/lib/wow/wow.min.js')}}"></script>
+    <script src="{{asset('public/front/assets/lib/easing/easing.min.js')}}"></script>
+    <script src="{{asset('public/front/assets/lib/waypoints/waypoints.min.js')}}"></script>
+    <script src="{{asset('public/front/assets/lib/counterup/counterup.min.js')}}"></script>
+    <script src="{{asset('public/front/assets/lib/owlcarousel/owl.carousel.min.js')}}"></script>
 
     <!-- Template Javascript -->
-    <script src="{{asset('front/assets/js/main.js')}}"></script>
+    <script src="{{asset('public/front/assets/js/main.js')}}"></script>
     @stack('script')
 </body>
 
