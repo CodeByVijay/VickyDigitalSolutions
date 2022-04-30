@@ -1,4 +1,4 @@
-@extends('front.layouts.home.app')
+@extends('front.layouts.app')
 @section('title','Home')
 @section('main-containt')
 <!-- Facts Start -->
@@ -398,17 +398,15 @@
             </div>
             <div class="testimonial-item bg-light my-4">
                 <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                    <img class="img-">
-                    <h4 class="text-primary mb-1">Client Name</h4>
-                    <small class="text-uppercase">Profession</small>
-                </div>fluid rounded" src="{{asset('public/front/assets/img/testimonial-4.jpg')}}" style="width: 60px; height: 60px;">
-                <div class="ps-4">
-                    <h4 class="text-primary mb-1">Client Name</h4>
-                    <small class="text-uppercase">Profession</small>
+                    <img class="img-fluid rounded" src="{{asset('public/front/assets/img/testimonial-4.jpg')}}" style="width: 60px; height: 60px;">
+                    <div class="ps-4">
+                        <h4 class="text-primary mb-1">Client Name</h4>
+                        <small class="text-uppercase">Profession</small>
+                    </div>
                 </div>
-            </div>
-            <div class=" pt-4 pb-5 px-5">
-                Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                <div class="pt-4 pb-5 px-5">
+                    Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                </div>
             </div>
         </div>
     </div>

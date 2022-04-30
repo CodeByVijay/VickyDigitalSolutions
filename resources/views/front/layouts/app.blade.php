@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>VDS - @yield('title')</title>
+    <title>Vicky Digital Solutions - @yield('title')</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -39,7 +39,6 @@
     </div>
     <!-- Spinner End -->
 
-
     <!-- Topbar Start -->
     <div class="container-fluid bg-dark px-5 d-none d-lg-block">
         <div class="row gx-0">
@@ -63,21 +62,26 @@
     </div>
     <!-- Topbar End -->
 
-
-    <!-- Navbar Start -->
+    <!-- Navbar & Carousel Start -->
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
-            <a href="index.html" class="navbar-brand p-0">
-                <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>Startup</h1>
+            <a href="i#" class="navbar-brand p-0">
+                <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>Vicky Digital Solutions</h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto py-0">
-                    <a href="{{route('front.home')}}" class="nav-item nav-link">Home</a>
-                    <a href="{{route('front.about')}}" class="nav-item nav-link active">About</a>
-                    <a href="service.html" class="nav-item nav-link">Services</a>
+            <div class="navbar-nav ms-auto py-0">
+                    <a href="{{route('front.home')}}" class="nav-item nav-link @if (Request::is('home') || Request::is('/') || Request::is('index'))
+                       active 
+                    @endif">Home</a>
+                    <a href="{{route('front.about')}}" class="nav-item nav-link @if (Request::is('about') || Request::is('about-us'))
+                       active 
+                    @endif">About</a>
+                    <a href="{{route('front.services')}}" class="nav-item nav-link @if (Request::is('services') || Request::is('service'))
+                       active 
+                    @endif">Services</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
                         <div class="dropdown-menu m-0">
@@ -95,25 +99,81 @@
                             <a href="quote.html" class="dropdown-item">Free Quote</a>
                         </div>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="{{route('front.contact')}}" class="nav-item nav-link @if (Request::is('contact') || Request::is('contact-us'))
+                       active 
+                    @endif">Contact</a>
                 </div>
                 <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
                 <!-- <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-primary py-2 px-4 ms-3">Download Pro Version</a> -->
             </div>
         </nav>
 
+        @if (Request::is('home') || Request::is('/') || Request::is('index'))
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="{{asset('public/front/assets/img/carousel-1.jpg')}}" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Creative & Innovative</h5>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Creative & Innovative Digital Solution</h1>
+                            <a href="quote.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Free Quote</a>
+                            <a href="" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="{{asset('public/front/assets/img/carousel-2.jpg')}}" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Creative & Innovative</h5>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Creative & Innovative Digital Solution</h1>
+                            <a href="quote.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Free Quote</a>
+                            <a href="" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        @else
         <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
             <div class="row py-5">
                 <div class="col-12 pt-lg-5 mt-lg-5 text-center">
-                    <h1 class="display-4 text-white animated zoomIn">About Us</h1>
+                    <h1 class="display-4 text-white animated zoomIn">
+                        @if (Request::is('services'))
+                        Services
+                        @elseif (Request::is('about') || Request::is('about-us'))
+                        About Us
+                        @elseif (Request::is('contact') || Request::is('contact-us'))
+                        Contact Us
+                        @endif
+                    </h1>
                     <a href="" class="h5 text-white">Home</a>
                     <i class="far fa-circle text-white px-2"></i>
-                    <a href="" class="h5 text-white">About</a>
+                    <a href="" class="h5 text-white">
+                        @if (Request::is('services'))
+                        Services
+                        @elseif (Request::is('about') || Request::is('about-us'))
+                        About Us
+                        @elseif (Request::is('contact') || Request::is('contact-us'))
+                        Contact Us
+                        @endif
+                    </a>
                 </div>
             </div>
         </div>
+        @endif
+       
     </div>
-    <!-- Navbar End -->
+    <!-- Navbar & Carousel End -->
 
 
     <!-- Full Screen Search Start -->
@@ -133,9 +193,12 @@
         </div>
     </div>
     <!-- Full Screen Search End -->
-    
+
     @yield('main-containt')
     @include('front.layouts.footer')
+
+
+
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
