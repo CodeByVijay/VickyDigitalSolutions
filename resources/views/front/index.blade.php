@@ -130,7 +130,7 @@
                         <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
                             <i class="fa fa-phone-alt text-white"></i>
                         </div>
-                        <h4>24/7 Support</h4>
+                        <h4>24*7 Support</h4>
                         <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
                     </div>
                 </div>
@@ -398,18 +398,21 @@
             </div>
             <div class="testimonial-item bg-light my-4">
                 <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                    <img class="img-fluid rounded" src="{{asset('public/front/assets/img/testimonial-4.jpg')}}" style="width: 60px; height: 60px;">
-                    <div class="ps-4">
-                        <h4 class="text-primary mb-1">Client Name</h4>
-                        <small class="text-uppercase">Profession</small>
-                    </div>
+                    <img class="img-">
+                    <h4 class="text-primary mb-1">Client Name</h4>
+                    <small class="text-uppercase">Profession</small>
+                </div>fluid rounded" src="{{asset('public/front/assets/img/testimonial-4.jpg')}}" style="width: 60px; height: 60px;">
+                <div class="ps-4">
+                    <h4 class="text-primary mb-1">Client Name</h4>
+                    <small class="text-uppercase">Profession</small>
                 </div>
-                <div class="pt-4 pb-5 px-5">
-                    Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                </div>
+            </div>
+            <div class=" pt-4 pb-5 px-5">
+                Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
             </div>
         </div>
     </div>
+</div>
 </div>
 <!-- Testimonial End -->
 
