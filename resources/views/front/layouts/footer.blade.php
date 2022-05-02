@@ -97,7 +97,7 @@
          <div class="row justify-content-end">
              <div class="col-lg-8 col-md-6">
                  <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
-                     <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Vicky Digital Solutions</a>. All Rights Reserved. Designed by <a class="text-white border-bottom" href="https://www.vijayamule.in/">VDS Taem</a></p>
+                     <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Vicky Digital Solutions</a>. All Rights Reserved. Designed by <a class="text-white border-bottom" href="https://www.vijayamule.in/">VDS Team</a></p>
                  </div>
              </div>
          </div>

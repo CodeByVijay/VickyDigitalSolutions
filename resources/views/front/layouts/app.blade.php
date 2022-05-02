@@ -72,7 +72,7 @@
                 <span class="fa fa-bars"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0">
+                <div class="navbar-nav ms-auto py-0">
                     <a href="{{route('front.home')}}" class="nav-item nav-link @if (Request::is('home') || Request::is('/') || Request::is('index'))
                        active 
                     @endif">Home</a>
@@ -156,7 +156,7 @@
                         Contact Us
                         @endif
                     </h1>
-                    <a href="" class="h5 text-white">Home</a>
+                    <a href="{{route('front.home')}}" class="h5 text-white">Home</a>
                     <i class="far fa-circle text-white px-2"></i>
                     <a href="" class="h5 text-white">
                         @if (Request::is('services'))
@@ -171,7 +171,7 @@
             </div>
         </div>
         @endif
-       
+
     </div>
     <!-- Navbar & Carousel End -->
 
@@ -196,8 +196,6 @@
 
     @yield('main-containt')
     @include('front.layouts.footer')
-
-
 
 
     <!-- JavaScript Libraries -->
